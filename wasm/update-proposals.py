@@ -103,6 +103,7 @@ def main():
                 rel_out_file = rel_wast + ".js.html"
                 src_file = os.path.join(out_dir, rel_out_file)
                 dst_file = os.path.join(target_dir, rel_out_file.replace(".html", ".tentative.html"))
+                print("changed file " + src_file + " " + dst_file)
 
                 assert os.path.exists(src_file)
                 os.makedirs(os.path.dirname(dst_file), exist_ok=True)
